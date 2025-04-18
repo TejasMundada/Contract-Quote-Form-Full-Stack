@@ -12,7 +12,7 @@ This full-stack web application enables contractors to submit roofing project qu
 
 ### 1. Contractor Quote Submission Form
 
-A clean and responsive form that captures:
+A clean and responsive form that captures: http://localhost:5173
 
 -  Contractor Name  
 - Company  
@@ -27,22 +27,23 @@ A clean and responsive form that captures:
 
 The backend offers:
 
-- POST /submit: Store new quote submissions  
-- GET /api/quotes: Retrieve quotes with optional filters:  
-  - state 
-  - roof_type  
+- POST : Store new quote submissions  : http://127.0.0.1:8000/api/quotes
+- GET : Retrieve quotes with optional filters:  
+  - state : http://127.0.0.1:8000/api/quotes?state=AZ
+  - roof_type  : http://127.0.0.1:8000/api/quotes?roofType=TPO
 
 Built using **Flask** and **SQLite**, and CORS-enabled for frontend integration.
 
 ### 3. Performance Dashboard
 
-A modern dashboard visualizing trends from **1,000+ mock roofing projects**, including:
+A modern dashboard visualizing trends from 1,000+ mock roofing projects, including:  http://localhost:5173/dashboard
 
 - Number of projects by state  
 - Average roof size by roof type  
 - Monthly trends  
 - Real-time quote stats (via API)  
 - Data filters by state and roof type  
+
 
 Future enhancements could include PDF reports, heatmaps, and export options.
 
@@ -90,7 +91,7 @@ Edit
 cd client
 npm install
 npm start
-React dev server will run on http://localhost:3000
+
 
 ### Mock Data
 Located in public/mock_roofing_data.json
